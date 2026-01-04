@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="img/logofavicon.webp">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portefolio</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
+
+
+    </header>
+    <main>
+        <div class="slideInright">
+            <div class="Kortintroduktion">
+                <h1>Tema 2 Grundlæggende web</h1>
+                <br />
+                <h2>Kort introduktion</h2>
+                <p>På dette tema blev vi introduceret til VS Code, og vi lærte om HTML, CSS, grid, webfonte,
+                    wireframes,
+                    mobile first samt
+                    gestalt lovene.</p>
+                <p>Jeg vil her vise den læring jeg har fået via dette tema og hvordan jeg har anvendt den i
+                    min studiestartsprøve.</p>
+                <br />
+                <h2>Formålet</h2>
+                <p>Formålet med denne opgave, var at vi skulle vise at vi stadig er studieaktive og at vi har forstået
+                    sproget i
+                    HTML og CSS og at lære hvordan man kan strukturere ud fra et wireframe og bruge grids i praksis når
+                    man
+                    laver
+                    en hjemmeside samt at forstå gestaltlovene.</p>
+            </div>
+            <br />
+            <h2>Proces</h2>
+            <section class="struktur">
+
+                <p>Jeg startede med at lave den korrekte mappestruktur til min opgave, hvilket vil sige at man kun skal
+                    bruge
+                    det engelske tastatur, ingen mellemrum og kun små bogstaver, da VS Code nemmere kan læse sådanne
+                    filnavne.</p>
+                <img src="img/mappestrukturr.webp" alt="struktur">
+
+
+            </section>
+
+
+
+            <br />
+            <section class="wireframe">
+
+                <p>Derefter var jeg inde og studere wireframen og layoutdiagrammet
+                    som opgaven skulle bygges op omkring med grid.
+                    Kort fortalt så er et wireframe en skitse af en hjemmeside, hvor man kan
+                    planlægge layout, struktur og hvordan elementerne skal placeres inden
+                    man koder hjemmesiden.</p>
+                <img src="img/wireframe.webp" alt="minegen" class="minegen">
+
+                <p>Hvis vi tager min computer som et eksempel, så skal den ud fra layoutdiagrammet
+                    hedde grid 1_1. Det betyder at layoutet er delt i 2 lige store kolonner
+                    og det er specielt godt at bruge, hvis man skal gå efter gestaltlovene,
+                    da dette nemt kan få brugeren til at opfatte det som en gruppe på websitet.
+                </p>
+
+
+                <img src="img/minegencomputer.webp" alt="computer">
+            </section>
+        </div>
+        <br />
+        <details>
+            <summary>Hvad er gestaltlovene?</summary>
+            <h2>Kilde: Interfacedesign af Morten Rold s. 118</h2>
+            <p>Gestaltlovene beskriver hvordan mennesker opfatter visuelle objekter i forhold til hinanden,
+                indenfor
+                Interfacedesign</p>
+            <h3>De 5 gestaltlove består af:</h3>
+            <p>*Loven om nærhed (Proximity)
+                Elementer der er placeret tæt på hinanden bliver opfattet som relateret til hinanden.
+            </p>
+            <p>*Loven om lighed (Similarity)
+                Elementer der ser ens ud bliver opfattet som relateret til hinanden
+            </p>
+            <p>*Loven om kontinuitet (Good continuation)
+                Elementer der er placeret så de danner linjer eller kurver opfattes som relateret til hinanden
+            </p>
+            <p>*Loven om lukkethed (Common region)
+                Elementer der er lukket inde i samme indramning bliver opfattet som relateret til hinanden
+            </p>
+            <p>*Loven om figurdannelse (Closure)
+                Elementer der er seperate kan opfattes som en samlet figur
+            </p>
+        </details>
+        <details>
+            <summary>Hvad er et grid?</summary>
+            <p>Et grid er et gitter indenfor design som består af rækker og kolonner.
+                Det er et rigtig vigtigt værktøj indenfor design da det kan skabe struktur på en hjemmeside.
+            </p>
+            <p>Indenfor HTML og CSS, bliver et grid aktiveret af "display:grid" og ved brug af
+                "grid-template-columns".
+                Man kan også bruge grid-column til at styre et gitters rækker og kolonner.</p>
+        </details>
+
+        <br />
+        <h2>Mobile first</h2>
+        <section class="mobilefirst">
+
+            <p>I temaet er vi blevet introduceret til "mobile first" konceptet som er rigtig god at arbejde ud fra
+                i nutidens verden, da langt størstedelen af befolkningen er på deres mobil i dag.</p>
+            <div class="animationscroll">
+                <img src="img/mobilkodning.webp" alt="kodning">
+            </div>
+            <p>Måden jeg har gjort det på i studiestartsprøven, er at jeg har lavet en style css og en layout css. På
+                den
+                måde
+                havde jeg nemmere mulighed for at arbejde med mobilsitet. Grunden til at det er bedre at arbejde med
+                mobile first
+                skyldes at de fleste brugere i dag, bruger internettet på deres mobil. Mobile first gør også at man kan
+                øge ens SEO på nettet og det
+                forbedre en hjemmesides indlæsningstid og giver dermed en bedre brugeroplevelse (UX).
+            </p>
+            <div class="animationscroll">
+                <img src="img/semantiskhtml.webp" alt="semantisk">
+            </div>
+            <p>Gennem processen med opsætningen benyttede jeg "Inspector tool" som jeg også
+                stadig
+                bruger rigtig meget. Dette værktøj hjælper mig til at få overblik over strukturen og hvilken class jeg
+                har sat
+                elementerne i
+                og
+                jeg bruger den også til at tjekke om der er nogle kodninger der måske overlapper hinanden, hvorefter
+                jeg,
+                inden
+                jeg ændrer i koden, ser om mit valg fungerer og eventuelt kan fikse overlaps.
+            </p>
+            <img src="img/mobilhtml.webp" alt="html">
+        </section>
+        <h1>Løsning</h1>
+        <p>
+            Ved at anvende værktøjer som inspector tool, wireframe, layout, grid og teorier som gestaltlovene, har jeg
+            lavet et website, som giver brugeren nem forståelse for, hvad websitet handler om.
+        </p>
+        <p>Det opfyldte også kravet til studiestartsprøven om at vores kodning skulle have de samme placeringer som
+            vist på wireframe og layoutdiagram.</p>
+        <p>
+            Det færdige resultat kan ses her:
+        </p>
+
+        <figure class="effect-ruby">
+            <a href="https://sebastian2698.github.io/website_v1/index.html"><img src="img/logofavicon.webp" alt="logo">
+            </a>
+        </figure>
+
+
+        <h1>Læring</h1>
+        <p>På dette tema har jeg lært hvordan man sætter HTML og CSS op og arbejder ud fra "mobile first"
+            konceptet. </p>
+        <p>Arbejdet med grid var udfordrende i starten, men ved at have lavet nogle af grid øvelserne og
+            grid-øvnings
+            spillet har jeg fået en meget bedre forståelse for værktøjet.</p>
+        <p>Jeg har også lært hvor vigtigt det er at arbejde ud fra gestaltlovene, da det kan medvirke til at
+            brugerne
+            bedre forstår strukturen på en hjemmeside.</p>
+        <div class="cta">
+            <a href="tema3.html" class="cta">Tema 3 projekt⭢</a>
+        </div>
+
+    </main>
+    <br />
+    <footer>
+        <h3>Portfolio for 1. semester efterår 2025</h3>
+        <p>Af Sebastian Blicher</p>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

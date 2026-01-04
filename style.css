@@ -1,0 +1,292 @@
+h1 {
+  font-family: "Inter", system-ui, sans-serif;
+}
+h2 {
+  font-family: "Inter", system-ui, sans-serif;
+}
+h3 {
+  font-family: "Inter", system-ui, sans-serif;
+}
+button {
+  background-color: #1085d2;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Inter", system-ui;
+  display: flex;
+  border: none;
+}
+p {
+  font-family: "Roboto", system-ui, sans-serif;
+}
+.logo {
+  width: 50%;
+  margin-right: auto;
+}
+.taske {
+  width: 50%;
+}
+a {
+  font-family: "Inter", system-ui;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.hjemmesider {
+  color: black;
+}
+.cta {
+  color: #1085d2;
+  display: flex;
+  font-family: "Inter", system-ui;
+  font-size: 25px;
+}
+
+a:hover {
+  color: black;
+  display: inline-block;
+}
+
+.centered {
+  color: white;
+  font-size: 36px;
+}
+
+footer {
+  background-color: #1085d2;
+  color: white;
+}
+.baggrund {
+  color: white;
+}
+
+.rotate {
+  animation: rotate_kf 3s;
+}
+
+@keyframes rotate_kf {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menu {
+  color: black;
+}
+
+.slideIn {
+  animation: slideIn 1s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.slideInright {
+  animation: slideIn 1s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.slideInleft {
+  animation: slideIn 1s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.slideInright2 {
+  animation: slideIn 1s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.slideInleft2 {
+  animation: slideIn 1s linear;
+}
+@keyframes slideIn {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.fadeIn {
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+figure.effect-ruby img {
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.15);
+}
+figure.effect-ruby:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.effect-ruby:hover .temaer {
+  visibility: visible;
+  opacity: 1;
+}
+.temaer {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #1085d2;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+.animationscroll {
+  animation: appear-1 ease-out;
+  animation-timeline: view();
+  animation-range: 0% 30%;
+}
+
+@keyframes appear-1 {
+  from {
+    opacity: 0;
+    translate: -20vw;
+    rotate: -5deg;
+  }
+}
+
+@keyframes clip-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+.animationscroll2 {
+  animation: clip-reveal ease-out;
+  animation-timeline: view();
+  animation-range: 0% 30%;
+}
+
+::backdrop {
+  opacity: 1;
+  background: #0008;
+}
+
+[popover] {
+  opacity: 0;
+  transition: 0.5s allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+  }
+}
+
+[popover] {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1085d2;
+  border-radius: 12px;
+  max-height: 80vh;
+}

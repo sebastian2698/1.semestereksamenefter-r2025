@@ -1,0 +1,277 @@
+/*************************** Mobil *****************************/
+@media (max-width: 768px) {
+  header {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+  body {
+    background-color: #f3ede7;
+  }
+  .centered {
+    width: 90%; /* chatgpt */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered h1 {
+    font-size: 1.8rem; /* chatgpt */
+    margin: 0.2rem 0;
+  }
+
+  .centered p {
+    font-size: 1rem; /* chatgpt */
+    margin: 0.2rem 0;
+  }
+
+  .centered .cta {
+    margin-top: 0.5rem; /* chatgpt */
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* chatgpt */
+    overflow: hidden;
+  }
+  .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* chatgpt */
+    display: block;
+  }
+  .top-right {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  [popover] {
+    background-color: #1085d2;
+  }
+}
+
+/************** browser**************/
+@media (min-width: 840px) {
+  * {
+    padding: 1px;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    --footer-bg: #1085d2;
+  }
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    align-items: end;
+    margin-bottom: 10px;
+    background-color: #1085d2;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+  }
+  body {
+    background-color: #f3ede7;
+  }
+
+  details {
+    outline: 2px solid #000;
+  }
+  summary {
+    background: var(--footer-bg);
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: auto;
+  }
+
+  /**************Forside**************/
+  .container {
+    position: relative;
+  }
+  .centered {
+    position: absolute;
+    top: 26%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .top-right {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  /**************Projekter**************/
+  .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .grids img {
+    object-fit: cover;
+    align-self: stretch;
+    width: 70%;
+  }
+
+  /**************Tema 2**************/
+  .Kortintroduktion {
+    line-height: 1.6;
+    max-width: 1200px;
+  }
+
+  .struktur {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .wireframe {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .wireframe img {
+    width: 55%;
+  }
+
+  .mobilefirst {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .mobilefirst img {
+    width: 50%;
+  }
+  details {
+    outline: 2px solid #000;
+  }
+  /**************Tema 3**************/
+  .retro {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .ux {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .moodboard {
+    width: 103%;
+  }
+  .brainstorm {
+    width: 65%;
+  }
+
+  .wireframetema3 {
+    width: 110%;
+  }
+  .sitemap {
+    width: 50%;
+  }
+
+  .ux img {
+    width: 80%;
+  }
+  .test {
+    justify-self: center;
+  }
+  .test img {
+    width: 75%;
+  }
+
+  .javascript {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .javascript img {
+    width: 100%;
+  }
+  /**************Tema 4**************/
+  .popovers {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .popovers img {
+    width: 50%;
+  }
+  .storybboard {
+    width: 110%;
+  }
+  .skitser {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .skitser img {
+    width: 50%;
+  }
+  .js img {
+    width: 75%;
+  }
+  .emergency {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .emergency img {
+    width: 45%;
+  }
+
+  /**************tema5**************/
+  .storyboard {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  /**************ommig**************/
+  .migmenu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+  .uddannelser {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: white;
+  }
+  .kompetencer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: white;
+  }
+}
