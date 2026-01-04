@@ -60,6 +60,77 @@ footer {
   color: white;
 }
 
+.menu {
+  color: black;
+}
+
+/**************burger**************/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #1085d2;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+/**************cssanimationer**************/
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
 .rotate {
   animation: rotate_kf 3s;
 }
@@ -71,10 +142,6 @@ footer {
   to {
     transform: rotate(360deg);
   }
-}
-
-.menu {
-  color: black;
 }
 
 .slideIn {
@@ -165,73 +232,6 @@ figure.effect-ruby:hover img {
   transition: opacity 0.3s ease;
 }
 
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #333333;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-@media screen and (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-    background-color: transparent;
-    border: 0;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-  nav.active .menu {
-    display: block;
-    background-color: #1085d2;
-    position: absolute;
-    top: 94px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 24px;
-  }
-}
-
-@keyframes site-progress {
-  from {
-    scale: 0 1;
-  }
-}
-
 .animationscroll {
   animation: appear-1 ease-out;
   animation-timeline: view();
@@ -289,4 +289,14 @@ figure.effect-ruby:hover img {
   background-color: #1085d2;
   border-radius: 12px;
   max-height: 80vh;
+}
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  block-size: 4px;
+  background-color: #1085d2;
+  animation: site-progress linear both;
+  transform-origin: 0;
+  animation-timeline: scroll();
 }
