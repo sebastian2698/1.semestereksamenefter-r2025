@@ -155,51 +155,6 @@ footer {
     transform: translate(0, 0);
   }
 }
-
-.slideInright {
-  animation: slideIn 1s linear;
-}
-@keyframes slideIn {
-  from {
-    transform: translate(-100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-.slideInleft {
-  animation: slideIn 1s linear;
-}
-@keyframes slideIn {
-  from {
-    transform: translate(-100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-.slideInright2 {
-  animation: slideIn 1s linear;
-}
-@keyframes slideIn {
-  from {
-    transform: translate(-100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
-.slideInleft2 {
-  animation: slideIn 1s linear;
-}
-@keyframes slideIn {
-  from {
-    transform: translate(-100%, 0);
-  }
-  to {
-    transform: translate(0, 0);
-  }
-}
 .fadeIn {
   animation: fadeIn 1s linear;
 }
